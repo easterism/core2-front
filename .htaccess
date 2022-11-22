@@ -1,0 +1,16 @@
+RewriteEngine on
+
+Options +FollowSymlinks
+
+RewriteCond %{REQUEST_URI} ^(\/soap\/.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^(.*\/general\/help\/.*)$ [OR]
+RewriteCond %{REQUEST_FILENAME} ^(.*\.swf)$ [OR]
+RewriteCond %{REQUEST_FILENAME} ^(.*\.jpg)$ [OR]
+RewriteCond %{REQUEST_FILENAME} ^(.*\.png)$ [OR]
+RewriteCond %{REQUEST_FILENAME} ^(.*\.gif)$ [OR]
+RewriteCond %{REQUEST_FILENAME} ^(.*\.css)$ [OR]
+RewriteCond %{REQUEST_FILENAME} ^(.*\.js)$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ - [L]
+
+RewriteRule ^(.*)$ index.php
