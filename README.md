@@ -1,2 +1,2 @@
 # core2-front
-frontent for core2 framework
+dummy project for core2 framework
