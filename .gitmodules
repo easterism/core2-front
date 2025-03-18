@@ -1,4 +1,4 @@
 [submodule "core2"]
 	path = core2
-	url = ../core2.git
+	url = git@github.com:easterism/core2.git
 	branch = master
