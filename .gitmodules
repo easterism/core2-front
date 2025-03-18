@@ -2,3 +2,6 @@
 	path = core2
 	url = git@github.com:easterism/core2.git
 	branch = master
+[submodule "core2/html/material"]
+	path = core2/html/material
+	url = git@github.com:easterism/core2-front-material.git
